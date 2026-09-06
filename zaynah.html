@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Culture | A Project by Zaynah</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff8f0;
+      color: #2c1810;
+      line-height: 1.6;
+    }
+
+    .tricolor {
+      height: 12px;
+      background: linear-gradient(to bottom, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+      background-size: 100% 300%;
+      background-image: linear-gradient(#FF9933 0 33%, #FFFFFF 33% 66%, #138808 66% 100%);
+    }
+
+    header {
+      background: linear-gradient(135deg, #7b1e1e 0%, #c45c26 50%, #d4a017 100%);
+      color: #fff;
+      text-align: center;
+      padding: 48px 20px 40px;
+    }
+
+    header p.kicker {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      opacity: 0.9;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    header .subtitle {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    nav {
+      background: #7b1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 8px 14px;
+      border-radius: 20px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #FF9933;
+      color: #2c1810;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin: 22px 0;
+      box-shadow: 0 4px 16px rgba(123, 30, 30, 0.08);
+      border-top: 6px solid #FF9933;
+    }
+
+    section:nth-of-type(even) { border-top-color: #138808; }
+
+    h2 {
+      color: #7b1e1e;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    p { margin-bottom: 12px; font-size: 17px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: #fff8f0;
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid #f0d9b5;
+    }
+
+    .card h3 {
+      color: #c45c26;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .card p { font-size: 15px; margin-bottom: 0; }
+
+    ul.facts {
+      margin: 12px 0 0 22px;
+      font-size: 17px;
+    }
+
+    ul.facts li { margin-bottom: 8px; }
+
+    .quote {
+      background: #138808;
+      color: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-size: 18px;
+      font-style: italic;
+      text-align: center;
+      margin: 22px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    th, td {
+      border: 1px solid #e6c9a8;
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #FF9933;
+      color: #2c1810;
+    }
+
+    tr:nth-child(even) { background: #fff8f0; }
+
+    .ashoka {
+      width: 72px;
+      height: 72px;
+      border: 6px solid #000080;
+      border-radius: 50%;
+      margin: 16px auto 0;
+      position: relative;
+    }
+
+    .ashoka::after {
+      content: "24";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000080;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2c1810;
+      color: #f5e6d3;
+      text-align: center;
+      padding: 28px 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    footer strong { color: #FF9933; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 30px; }
+      nav a { font-size: 13px; padding: 6px 10px; }
+      section { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="tricolor" aria-hidden="true"></div>
+  <header>
+    <p class="kicker">Class 7 HTML Project</p>
+    <h1>Incredible Indian Culture</h1>
+    <p class="subtitle">Unity in Diversity — A project by Zaynah</p>
+    <div class="ashoka" title="Ashoka Chakra has 24 spokes"></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#festivals">Festivals</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#arts">Arts</a></li>
+      <li><a href="#monuments">Monuments</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About India</h2>
+      <p>India is a large country in South Asia. More than 1.4 billion people live here. They speak many languages, follow many religions, and celebrate many festivals — yet they all belong to one nation.</p>
+      <p>This idea is called <strong>Unity in Diversity</strong>. It means we can be different and still live together with respect.</p>
+      <div class="quote">“The beauty of India is that so many cultures live side by side, like colours in a rainbow.”</div>
+    </section>
+
+    <section id="festivals">
+      <h2>Festivals of India</h2>
+      <p>Festivals bring families and neighbourhoods together. Here are some of the most loved ones:</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Diwali</h3>
+          <p>The festival of lights. People decorate homes with diyas, share sweets, and remember the victory of good over evil.</p>
+        </article>
+        <article class="card">
+          <h3>Holi</h3>
+          <p>The festival of colours. Friends play with gulal, sing, and welcome spring with joy.</p>
+        </article>
+        <article class="card">
+          <h3>Eid</h3>
+          <p>A festival of gratitude. Families pray, wear new clothes, and share food with neighbours and the needy.</p>
+        </article>
+        <article class="card">
+          <h3>Pongal &amp; Baisakhi</h3>
+          <p>Harvest festivals. Farmers thank nature for crops, and people cook special dishes together.</p>
+        </article>
+        <article class="card">
+          <h3>Christmas</h3>
+          <p>Celebrated with carols, stars, and cakes. In India it is enjoyed by people of many communities.</p>
+        </article>
+        <article class="card">
+          <h3>Independence Day</h3>
+          <p>On 15 August we remember 1947, hoist the Tiranga, and feel proud of our freedom.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>Food from Every Region</h2>
+      <p>Indian food changes from state to state. Spices like turmeric, cumin, and cardamom make it famous all over the world.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Popular dishes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>North India</td>
+            <td>Butter chicken, chole bhature, naan, lassi</td>
+          </tr>
+          <tr>
+            <td>South India</td>
+            <td>Dosa, idli, sambar, filter coffee</td>
+          </tr>
+          <tr>
+            <td>East India</td>
+            <td>Rosogolla, fish curry, momos in the hills</td>
+          </tr>
+          <tr>
+            <td>West India</td>
+            <td>Dhokla, pav bhaji, vada pav, seafood</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="arts">
+      <h2>Dance, Music and Clothes</h2>
+      <p>India has classical dances such as Bharatanatyam, Kathak, Odissi, and Kathakali. Folk dances like Bhangra, Garba, and Ghoomar are full of energy.</p>
+      <p>Classical music has two main styles: <strong>Hindustani</strong> in the north and <strong>Carnatic</strong> in the south. Instruments include the sitar, tabla, veena, and flute.</p>
+      <p>Traditional clothes are also part of culture: saree, salwar-kameez, lehenga, dhoti, kurta, and turban. People often wear them on festivals and weddings.</p>
+    </section>
+
+    <section id="monuments">
+      <h2>Famous Monuments</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Taj Mahal</h3>
+          <p>In Agra. Shah Jahan built this white marble tomb for Mumtaz Mahal. It is a UNESCO World Heritage Site.</p>
+        </article>
+        <article class="card">
+          <h3>Red Fort</h3>
+          <p>In Delhi. The Prime Minister hoists the flag here on Independence Day.</p>
+        </article>
+        <article class="card">
+          <h3>Qutub Minar</h3>
+          <p>A tall minaret in Delhi, more than 800 years old.</p>
+        </article>
+        <article class="card">
+          <h3>Gateway of India</h3>
+          <p>A grand arch in Mumbai, facing the Arabian Sea.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="facts">
+      <h2>Fun Facts for Class 7</h2>
+      <ul class="facts">
+        <li>India has <strong>22 official languages</strong> in the Constitution, and hundreds of other languages and dialects.</li>
+        <li>The national animal is the <strong>tiger</strong>, the national bird is the <strong>peacock</strong>, and the national flower is the <strong>lotus</strong>.</li>
+        <li>The Ashoka Chakra in the flag has <strong>24 spokes</strong>, standing for duty through the day.</li>
+        <li>Yoga and Ayurveda began in India many centuries ago.</li>
+        <li>The world’s largest written constitution is the <strong>Constitution of India</strong>.</li>
+        <li>India is home to many religions: Hinduism, Islam, Christianity, Sikhism, Buddhism, Jainism, and more.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with pride by <strong>Zaynah</strong></p>
+    <p>Class 7 HTML Project — Indian Culture</p>
+    <p style="margin-top:10px;font-size:13px;">Thank you for visiting!</p>
+  </footer>
+</body>
+</html>
